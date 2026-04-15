@@ -1,0 +1,21 @@
+import React from 'react';
+import { useLoaderData, useParams } from 'react-router';
+import PersonCardDetails from './PersonCardDetails';
+
+const PersonDetails = () => {
+
+    const { name } = useParams();
+
+    const dataX = useLoaderData()
+
+    const data = dataX.find(data => data.name == name)
+    console.log(name, data);
+
+    return (
+        <div>
+            <PersonCardDetails data={data} />
+        </div>
+    );
+};
+
+export default PersonDetails;
