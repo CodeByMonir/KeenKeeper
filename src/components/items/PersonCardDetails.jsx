@@ -14,6 +14,7 @@ const PersonCardDetails = ({ data }) => {
         const newChat = {
             type: id,
             link: id === "call" ? call : id === "chat" ? chat : video,
+            contact: id === "call" ? "Call" : id === "chat" ? "Chat" : "Video",
             name: data.name,
             time: new Date().toLocaleString()
         };
