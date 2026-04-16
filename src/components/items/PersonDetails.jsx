@@ -9,7 +9,6 @@ const PersonDetails = () => {
     const dataX = useLoaderData()
 
     const data = dataX.find(data => data.name == name)
-    console.log(name, data);
 
     return (
         <div>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FiArchive } from 'react-icons/fi';
 import { RiDeleteBin5Line, RiNotificationSnoozeLine } from 'react-icons/ri';
 import call from "../../assets/PhoneCall.png"
@@ -6,6 +6,21 @@ import chat from "../../assets/ChatDots.png"
 import video from "../../assets/VideoCamera.png"
 
 const PersonCardDetails = ({ data }) => {
+
+    const [storeChats, setStoreChats] = useState([]);
+
+    const handleChats = (id) => {
+        const newChat = [
+           { type: id,
+            link: [chat, call, video],
+            name: data.name,
+            time: new Date()
+        }];
+        
+        setStoreChats([...storeChats, newChat]);
+    }
+    console.log(storeChats);
+
     return (
         <div className='grid grid-cols-1 lg:grid-cols-3 container mx-auto mt-20 gap-6'>
             <div className=''>
@@ -59,9 +74,20 @@ const PersonCardDetails = ({ data }) => {
                 <div>
                     <h3 className='font-medium text-[20px] text-[#244D3F]'>Quick Check-In</h3>
                     <div className='grid grid-cols-1 lg:grid-cols-3 gap-4 mt-4'>
-                        <button className='p-4 flex flex-col items-center gap-2 rounded-md shadow-md bg-[#F8FAFC]'><img src={call} alt="Call" /> Call</button>
-                        <button className='p-4 flex flex-col items-center gap-2 rounded-md shadow-md bg-[#F8FAFC]'><img src={chat} alt="Chat" /> Text</button>
-                        <button className='p-4 flex flex-col items-center gap-2 rounded-md shadow-md bg-[#F8FAFC]'><img src={video} alt="" /> Video</button>
+                        <button
+                            onClick={() => handleChats("call")}
+                            className='p-4 flex flex-col items-center gap-2 rounded-md shadow-md bg-[#F8FAFC]'
+                        ><img src={call} alt="Call" /> Call</button>
+
+                        <button
+                            onClick={() => handleChats("chat")}
+                            className='p-4 flex flex-col items-center gap-2 rounded-md shadow-md bg-[#F8FAFC]'
+                        ><img src={chat} alt="Chat" /> Text</button>
+
+                        <button
+                            onClick={() => handleChats("video")}
+                            className='p-4 flex flex-col items-center gap-2 rounded-md shadow-md bg-[#F8FAFC]'
+                        ><img src={video} alt="" /> Video</button>
                     </div>
                 </div>
             </div>
