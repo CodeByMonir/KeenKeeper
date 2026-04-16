@@ -1,25 +1,26 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import { FiArchive } from 'react-icons/fi';
 import { RiDeleteBin5Line, RiNotificationSnoozeLine } from 'react-icons/ri';
 import call from "../../assets/PhoneCall.png"
 import chat from "../../assets/ChatDots.png"
 import video from "../../assets/VideoCamera.png"
+import { timelineContext } from '../../Context/TimelineProvider';
 
 const PersonCardDetails = ({ data }) => {
 
-    const [storeChats, setStoreChats] = useState([]);
+    const [ storeChats, setStoreChats ] = useContext(timelineContext);
 
     const handleChats = (id) => {
-        const newChat = [
-           { type: id,
-            link: [chat, call, video],
+        const newChat = {
+            type: id,
+            link: id === "call" ? call : id === "chat" ? chat : video,
             name: data.name,
-            time: new Date()
-        }];
-        
+            time: new Date().toLocaleString()
+        };
+
         setStoreChats([...storeChats, newChat]);
-    }
-    console.log(storeChats);
+
+    };
 
     return (
         <div className='grid grid-cols-1 lg:grid-cols-3 container mx-auto mt-20 gap-6'>

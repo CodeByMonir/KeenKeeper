@@ -7,7 +7,8 @@ import RootLayout from "./layout/RootLayout";
 import ErrorPage from "./pages/ErrorPage";
 import HomePage from "./pages/Home/HomePage";
 import PersonDetails from "./components/items/PersonDetails";
-
+import Timeline from "./pages/Timeline/Timeline";
+import TimelineProvider from "./Context/TimelineProvider";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -19,7 +20,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/timeline",
-        element: <h2>TimelIne</h2>,
+        element: <Timeline />,
       },
       {
         path: "stats",
@@ -37,6 +38,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
+    <TimelineProvider>
     <RouterProvider router={router} />
+    </TimelineProvider>
   </StrictMode>,
 );
