@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { FiPlus } from 'react-icons/fi';
 import CardX from '../../components/items/CardX';
 
@@ -30,7 +30,11 @@ const HomePage = () => {
                     </div>
                 </div>
                 <div>
-                    <CardX/>
+                    <Suspense fallback={<div className="flex justify-center items-center min-h-screen">
+                        <span className="loading loading-spinner text-success"></span>
+                    </div>}>
+                        <CardX/>
+                    </Suspense>
                 </div>
             </div>
         </div>

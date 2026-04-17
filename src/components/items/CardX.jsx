@@ -18,7 +18,6 @@ const CardX = () => {
                 {data.map((data, ind) => {
                     return (
                         <Link
-                            onClick=""
                             to={`/friend/${data.name}`}
                             key={ind}
                         >
