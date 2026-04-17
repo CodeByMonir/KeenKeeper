@@ -24,7 +24,7 @@ const CardX = () => {
                             <CardDetails data={data} key={ind} />
                         </Link>
                     );
-                })};
+                })}
 
             </div>
         </div>
