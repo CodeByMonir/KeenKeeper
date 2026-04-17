@@ -31,7 +31,7 @@ const PersonCardDetails = ({ data }) => {
     return (
         <div className='grid grid-cols-1 lg:grid-cols-3 container mx-auto my-20 gap-6 p-6 md:p-0'>
             <div className=''>
-                <div className="flex flex-col items-center gap-3 rounded-md shadow-md text-center bg-white">
+                <div className="flex flex-col items-center gap-3 rounded-md shadow-md text-center bg-white p-6">
                     <div className="flex justify-center items-center h-20 w-20 rounded-full overflow-hidden shadow-xl">
                         <img
                             src={data.picture}
