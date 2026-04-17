@@ -2,7 +2,7 @@
 
 ---
 
-## 🐣 Basic Requirements (Must Do for Everyone)
+## 🐣 Basic Requirements
 
 - My app is working on **all screen sizes** — mobile, tablet, and desktop
 - My app is running without any errors after deployment
@@ -37,7 +37,7 @@ Each friend object have these fields:
 {
   "id": 1,
   "name": "John Doe",
-  "picture": "https://example.com/photo.jpg",
+  "picture": "collected from facebook",
   "email": "john@example.com",
   "days_since_contact": 12,
   "status": "overdue",
