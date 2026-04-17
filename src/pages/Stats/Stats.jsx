@@ -19,7 +19,7 @@ const Stats = () => {
     ];
 
     return (
-        <div className='container mx-auto my-20'>
+        <div className='container mx-auto my-20 px-6 md:px-0'>
             <h1 className='font-bold text-[48px] text-[#1F2937] mb-6'>Friendship Analytics</h1>
             <div className='shadow-lg p-8  bg-white rounded-lg'>
                 <h3 className='font-medium text-[20px] text-[#244D3F] mb-6'>By Interaction Type</h3>

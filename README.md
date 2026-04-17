@@ -159,7 +159,7 @@ This page shows the **history of all interactions** (calls, texts, video calls) 
 
 ---
 
-### 10. 🛠️ Other Requirements(Required for marks)
+### 10. 🛠️ Other Requirements
 
 | # | Requirement |
 |---|---|
@@ -172,24 +172,14 @@ This page shows the **history of all interactions** (calls, texts, video calls) 
 
 ### C1. 📊 Friendship Analytics Page (Stats Page)
 
-- The page must have a **"Friendship Analytics"** heading at the top
-- Add a **Pie Chart** (using Recharts) showing the count of **Call / Text / Video** interactions — match the Figma layout
+- The page have a **"Friendship Analytics"** heading at the top
+- Added a **Pie Chart** (using Recharts) showing the count of **Call / Text / Video** interactions — match the Figma layout
 
 ---
 
 ### C2. 🔍 Timeline Filter
 
-- Add **filter options** on the Timeline page so users can filter entries by: **Call**, **Text**, or **Video**
-
----
-
-### C3. 📄 GitHub README
-
-Add a well-designed `README.md` to your GitHub repository that includes:
-- Name of your project
-- A short description
-- Technologies you used
-- 3 key features of your project
+- Added **filter options** on the Timeline page so users can filter entries by: **Call**, **Text**, or **Video**
 
 ---
 
@@ -202,26 +192,16 @@ These are not required but will make your project stand out:
 
 ---
 
-## 🛠️ Technologies to Use
+## 🛠️ Technologies are Used
 
 | Technology | Purpose |
 |---|---|
-| **React.js/Next.js** | Build the UI |
-| **React Router DOM/App router(Next.js)** | Handle page navigation |
+| **React.js** | Build the UI |
+| **React Router DOM** | Handle page navigation |
 | **Tailwind CSS+Any component library** | Styling and responsiveness |
 | **Recharts** | Chart |
 
 ---
 
-## 🚀 Deployment
-
-Deploy your project on **Vercel**, **Netlify**, **Cloudflare Pages**, or anywhere else before submitting.
-
----
-
-## 📬 Submission
-
-Fill in both links before submitting:
-
-- **Live Link**:
-- **GitHub Repository Link**:
+- **Live Link : https://keen-keeper-ruddy.vercel.app**:
+- **GitHub Repository Link : https://github.com/CodeByMonir/KeenKeeper**:

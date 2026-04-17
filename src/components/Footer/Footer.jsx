@@ -20,7 +20,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className='flex justify-between items-center text-[#FAFAFA] leading-6 pt-8 border-t border-[#FAFAFA]'>
+                <div className='flex flex-col sm:flex-row justify-between items-center text-[#FAFAFA] leading-6 pt-8 border-t border-[#FAFAFA]'>
                     <p>© 2026 KeenKeeper. All rights reserved. </p>
                     <ul className='flex gap-10 items-center '>
                         <li>Privacy Policy</li>

@@ -28,7 +28,7 @@ const Timeline = () => {
     const filteredChats = getFilteredChats();
 
     return (
-        <div className='max-w-300 mx-auto my-20 min-h-screen space-y-6'>
+        <div className='max-w-300 mx-auto my-20 min-h-screen space-y-6 px-6 xl:px-0'>
             <div>
                 <h2 className='text-[48px] font-bold text-[#1F2937]'>Timeline</h2>
 
