@@ -29,7 +29,7 @@ const PersonCardDetails = ({ data }) => {
     };
 
     return (
-        <div className='grid grid-cols-1 lg:grid-cols-3 container mx-auto my-20 sm:gap-6 mb-6 sm:mb-0 p-6 md:p-0'>
+        <div className='grid grid-cols-1 lg:grid-cols-3 container mx-auto my-20 sm:gap-6 p-6 md:p-0'>
             <div className=''>
                 <div className="flex flex-col items-center gap-3 rounded-md shadow-md text-center bg-white p-6">
                     <div className="flex justify-center items-center h-20 w-20 rounded-full overflow-hidden shadow-xl">
@@ -58,7 +58,7 @@ const PersonCardDetails = ({ data }) => {
                 <div>
                     <p className='font-medium text-[#1F2937] flex items-center justify-center gap-2 p-4 shadow-md'><RiNotificationSnoozeLine /> Snooze 2 Weeks</p>
                     <p className='font-medium text-[#1F2937] flex items-center justify-center gap-2 p-4 shadow-md'><FiArchive /> Archive</p>
-                    <p className='font-medium text-[#EF4444] flex items-center justify-center gap-2 p-4 shadow-md'><RiDeleteBin5Line /> Delete</p>
+                    <p className='font-medium text-[#EF4444] flex items-center justify-center gap-2 p-4 shadow-md mb-6 sm:mb-0'><RiDeleteBin5Line /> Delete</p>
                 </div>
             </div>
             <div className='col-span-2 space-y-6'>
