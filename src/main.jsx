@@ -10,6 +10,7 @@ import PersonDetails from "./components/items/PersonDetails";
 import Timeline from "./pages/Timeline/Timeline";
 import TimelineProvider from "./Context/TimelineProvider";
 import { ToastContainer } from "react-toastify";
+import Stats from "./pages/Stats/Stats";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -25,7 +26,7 @@ const router = createBrowserRouter([
       },
       {
         path: "stats",
-        element: <h2>Stats</h2>,
+        element: <Stats />,
       },
       {
         path: "/friend/:name",

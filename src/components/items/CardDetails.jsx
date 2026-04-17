@@ -2,7 +2,7 @@ import React from 'react';
 
 const CardDetails = ({ data }) => {
     return (
-        <div className="p-6 flex flex-col items-center gap-3 rounded-md shadow-md text-center">
+        <div className="p-6 flex flex-col items-center gap-3 rounded-md shadow-md text-center bg-white">
             <div className="flex justify-center items-center h-20 w-20 rounded-full overflow-hidden shadow-xl">
                 <img
                     src={data.picture}

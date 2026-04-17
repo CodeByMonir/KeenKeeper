@@ -12,15 +12,15 @@ const HomePage = () => {
             </div>
             <div>
                 <div className='grid grid-cols-4 gap-6'>
-                    <div className='p-8 shadow-lg space-y-2 text-center rounded-md'>
+                    <div className='p-8 shadow-lg space-y-2 text-center rounded-md bg-white'>
                         <span className='text-[#244D3F] font-semibold text-[32px]'>10</span>
                         <p className='text-[#64748B] text-[18px]'>Total Friends</p>
                     </div>
-                    <div className='p-8 shadow-lg space-y-2 text-center rounded-md'>
+                    <div className='p-8 shadow-lg space-y-2 text-center rounded-md bg-white'>
                         <span className='text-[#244D3F] font-semibold text-[32px]'>3</span>
                         <p className='text-[#64748B] text-[18px]'>On Track</p>
                     </div>
-                    <div className='p-8 shadow-lg space-y-2 text-center rounded-md'>
+                    <div className='p-8 shadow-lg space-y-2 text-center rounded-md bg-white'>
                         <span className='text-[#244D3F] font-semibold text-[32px]'>6</span>
                         <p className='text-[#64748B] text-[18px]'>Need Attention</p>
                     </div>

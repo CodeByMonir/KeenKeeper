@@ -52,7 +52,7 @@ const Timeline = () => {
                 return (
                     <div
                         key={ind}
-                        className='flex items-center gap-4 p-4 shadow-md rounded-md'
+                        className='flex items-center gap-4 p-4 shadow-md rounded-md bg-white'
                     >
                         <div>
                             <img src={link} alt="" className='w-8 h-8' />
