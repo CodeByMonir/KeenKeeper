@@ -5,6 +5,7 @@ import call from "../../assets/PhoneCall.png"
 import chat from "../../assets/ChatDots.png"
 import video from "../../assets/VideoCamera.png"
 import { timelineContext } from '../../Context/TimelineProvider';
+import { toast } from 'react-toastify';
 
 const PersonCardDetails = ({ data }) => {
 
@@ -19,6 +20,10 @@ const PersonCardDetails = ({ data }) => {
             time: new Date().toLocaleString()
         };
 
+        toast.success(`${newChat.contact} with ${data.name}`, {
+            position: "top-center",
+            autoClose: 1000,
+        });
         setStoreChats([...storeChats, newChat]);
 
     };
