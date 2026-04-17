@@ -9,7 +9,7 @@ const Footer = () => {
         <div className='bg-[#244D3F] pt-20 pb-8'>
             <div className='container mx-auto'>
                 <div className='text-center'>
-                    <span className='flex items-center justify-center w-75 sm:w-auto'><img src={logoLg} alt="Keen Keeper Logo" /></span>
+                    <span className='flex items-center justify-center'><img className='w-75 md:w-full' src={logoLg} alt="Keen Keeper Logo" /></span>
                     <p className='text-white leading-6'>Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.</p>
                     <div className='mt-6 mb-10 space-y-4'>
                         <h3 className='text-white font-medium text-[20px] leading-5'>Social Links</h3>
