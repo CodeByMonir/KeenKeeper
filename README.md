@@ -54,7 +54,7 @@ Each friend object have these fields:
 
 ---
 
-### 4. 👫 Your Friends Section (Home Page)
+### 4. 👫 Friends Section (Home Page)
 
 - Displayed all friends from My JSON file as cards, following the Figma design
 - **Each card is showing:**
@@ -68,7 +68,7 @@ Each friend object have these fields:
 | 🔴 Status | Background color changes based on status (match Figma) |
 
 - Cards is showing in a **4-column grid layout on large screens**
-- Clicking a card must navigate the user to that friend's **Detail Page**
+- Clicking a card is navigating the user to that friend's **Detail Page**
 
 ---
 
@@ -124,9 +124,7 @@ When a user clicks **Call**, **Text**, or **Video** in the Quick Check-In Card:
   - "Text with Alex Johnson"
   - "Video with Alex Johnson"
 
-✅ A **toast notification** must appear when any of these buttons is clicked.
-
-
+✅ A **toast notification** appears when any of these buttons is clicked.
 
 ---
 
